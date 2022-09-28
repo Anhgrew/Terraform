@@ -4,5 +4,5 @@ variable "cluster-name" {
 }
 
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "ap-southeast-1"
 }

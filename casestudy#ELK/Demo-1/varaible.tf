@@ -1,9 +1,9 @@
 variable "AWS_REGION" {
-default = "ap-south-1"
+default = "ap-southeast-1"
 }
 
 provider "aws" {
-  region     = "ap-south-1"
+  region     = "ap-southeast-1"
 }
 
 variable "AMIS" {
@@ -14,10 +14,11 @@ variable "AMIS" {
         us-west-2 = "ami-0352d5a37fb4f603f"
         us-west-1 = "ami-0f40c8f97004632f9"
         ap-south-1 = "ami-0fd48e51ec5606ac1"
+        ap-southeast-1 = "ami-00e912d13fbb4f225"
     }
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
   description = "Public key path"
-  default = "~/.ssh/levelup_key.pub"
+  default = "~/.ssh/id_rsa.pub"
 }
