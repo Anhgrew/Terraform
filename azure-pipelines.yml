@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 schedules:
-  - cron: "58 6 * * Sat"
+  - cron: 59 6 * * Sat"
     displayName: "Run on weekends"
     branches:
       include:
