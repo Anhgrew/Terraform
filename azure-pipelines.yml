@@ -4,11 +4,12 @@
 # https://aka.ms/yaml
 
 schedules:
-  - cron: "0 7 * * Sat"
+  - cron: "12 14 * * Sat"
     displayName: "Run on weekends"
     branches:
       include:
       - master
+    always: true
 
 pool:
   vmImage: ubuntu-latest
